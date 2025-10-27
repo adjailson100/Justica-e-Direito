@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Escritório Juris FJD – Advogado especializado em direito do consumidor. Atendimento gratuito e honorários condicionados ao êxito." />
+  <title>Juris FJD – Direito do Consumidor</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="Repositorio/17586/Logo/Design sem nome - 2025-01-14T201941.420.webp" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <style>
+    :root {
+      --menu-bg: #2c3e50;
+      --footer-bg: #2c3e50;
+      --form-bg: #29293a;
+      --primary: #7f8c8d;
+      --text-light: #fff;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background: var(--menu-bg);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand img {
+      max-height: 50px;
+    }
+
+    .hero-content {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+    }
+
+    .hero-content h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .hero-content h2 {
+      font-size: 2.2rem;
+      margin: 0.5rem 0;
+    }
+
+    @media (min-width: 768px) {
+      .hero-content h1 { font-size: 2rem; }
+      .hero-content h2 { font-size: 2.8rem; }
+    }
+
+    .service-card {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .faq-item h3 {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 0.5rem;
+    }
+
+    .faq-item .content {
+      padding: 0 1rem;
+      display: none;
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--text-light);
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .whatsapp-float img {
+      width: 36px;
+      filter: invert(1);
+    }
+  </style>
+
+  <!-- Meta tags para SEO -->
+  <meta property="og:title" content="Juris FJD – Direito do Consumidor" />
+  <meta property="og:description" content="Atendimento gratuito com advogado especializado. Honorários só após vitória." />
+  <meta property="og:image" content="https://jurisfjd.com.br/Repositorio/17586/Logo/Design%20sem%20nome%20-%202025-01-14T201941.420.webp" />
+  <meta property="og:url" content="https://jurisfjd.com.br" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://jurisfjd.com.br" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHHH0CMN6V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KHHH0CMN6V');
+  </script>
+</head>
+<body>
+
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="Repositorio/17586/Logo/Design sem nome - 2025-01-14T201941.420.webp" alt="Juris FJD" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#quem-somos">Quem Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#como-funciona">Como Funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn-light" href="https://wa.me/5592992988671" target="_blank">Fale Conosco</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="position-relative">
+    <img src="Repositorio/17586/Slides/Design sem nome - 2025-01-14T201747.512.webp" 
+         alt="Advogado Juris FJD" 
+         class="img-fluid w-100" 
+         style="height: 60vh; object-fit: cover;"
+         loading="eager">
+    <div class="container position-absolute top-50 start-50 translate-middle text-center text-white">
+      <div class="hero-content">
+        <h1>Você fala diretamente com um advogado</h1>
+        <h2>NÃO COBRAMOS CONSULTA</h2>
+        <p>Seu direito é a nossa prioridade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM SOMOS -->
+  <section id="quem-somos" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h2 class="text-primary">Bem-vindos ao escritório Juris FJD</h2>
+          <p class="lead">10+ anos de experiência</p>
+          <p>A Juris FJD é comprometida com a aplicação ética e fundamentada do Direito, baseada em princípios como boa-fé, proporcionalidade e devido processo legal. Oferecemos soluções jurídicas assertivas, respeitando a complexidade de cada caso.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="Repositorio/17569/Conteudos/110693/Design%20sem%20nome%20-%202025-01-12T225254.475.webp" 
+               alt="Dr. Adjailson" 
+               class="img-fluid rounded shadow"
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-5">Como vai funcionar o seu atendimento</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="Repositorio/17586/Conteudos/110797/1.webp" alt="Ouvir seu caso" class="img-fluid mb-3" loading="lazy">
+            <p>Nosso advogado ouvirá seu caso com atenção.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="Repositorio/17586/Conteudos/110797/2.webp" alt="Orientação" class="img-fluid mb-3" loading="lazy">
+            <p>Você será orientado com experiência.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="Repositorio/17586/Conteudos/110797/3.webp" alt="Acompanhamento" class="img-fluid mb-3" loading="lazy">
+            <p>Participaremos do início ao fim do seu processo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTAQUE -->
+  <section class="py-5 text-center text-white" style="background: var(--menu-bg);">
+    <div class="container">
+      <h2>ADVOGADO DE DEFESA DO CONSUMIDOR É ACESSÍVEL?</h2>
+      <p class="lead">Junto ao Escritório Juris FJD, você não paga adiantado. Nossos honorários são condicionados à vitória na causa!</p>
+    </div>
+  </section>
+
+  <!-- DÚVIDAS -->
+  <section id="duvidas" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Principais dúvidas dos nossos clientes</h2>
+      <p class="text-center mb-5">Clique em cada pergunta para ver a resposta</p>
+
+      <div class="faq-item">
+        <h3>Quais as ações mais comuns no direito consumerista?</h3>
+        <div class="content">
+          <p><strong>Ações de reparação de danos</strong>: indenização por produtos/serviços inadequados.<br>
+          <strong>Ações de cobrança indevida</strong>: recuperação de valores pagos sem autorização.<br>
+          <strong>Nulidade de cláusulas abusivas</strong>, <strong>rescisão de contratos</strong>, <strong>publicidade enganosa</strong>, entre outras.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>Como identificar cobrança bancária indevida?</h3>
+        <div class="content">
+          <p>Procure por nomes como: Tarifa Fácil, Cesta de Serviços, Maxiconta, Seguro Prestamista, MORACRED PESS, etc., especialmente se você não assinou contrato específico.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>O que fazer em caso de cobranças indevidas?</h3>
+        <div class="content">
+          <p>Entre em contato com o fornecedor ou busque um escritório especializado. Nós assumimos a defesa dos seus direitos com base no Código de Defesa do Consumidor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-card">
+            <h2>Entre em contato para uma análise de caso gratuita</h2>
+            <div class="mt-4 d-flex flex-column align-items-center gap-3">
+              <a href="mailto:adv.adjailson@jurisfjd.com.br" class="btn btn-outline-primary w-100">Enviar E-mail</a>
+              <a href="https://wa.me/5592992988671" class="btn btn-success w-100" target="_blank">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="Repositorio/17586/Logo/Design sem nome - 2025-01-14T201941.420.webp" alt="Logo" class="img-fluid" loading="lazy">
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Sobre</h5>
+          <p>Dr. Adjailson Silva Figueira de Souza<br>OAB/AM 8.620</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Contato</h5>
+          <p><i class="bi bi-envelope"></i> <a href="mailto:adv.adjailson@jurisfjd.com.br" class="text-white">adv.adjailson@jurisfjd.com.br</a></p>
+          <p><i class="bi bi-whatsapp"></i> (92) 99298-8671</p>
+          <p><i class="bi bi-clock"></i> Segunda a Sexta, 08h às 19h</p>
+        </div>
+      </div>
+      <div class="text-center mt-4 pt-3 border-top border-secondary">
+        <p>© 2025 Juris FJD. Direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <a href="https://wa.me/5592992988671" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE3LjQ4IDEuNDRDNy44OCAxLjQ0IDEuNjggNy42NCAxLjY4IDE3LjI0YzAgMi44IDEuMSA1LjMgMi45IDcuM2wtMS43IDEuN2MwIDAgNS4yIDEuNiA3LjQtMi4zIDAgMCAuOS41IDEuNi41LjcgMCAxLjUtLjQgMS41LS40czQuMS0xLjIgNi40LTMuOWMxLjktMiAyLjktNC42IDIuOS03LjNDMjIuMzYgNy42NCAxNi4xNiAxLjQ0IDE3LjQ4IDEuNDR6bS0zLjEgMTMuMjRjLS40LjgtMS4yIDEuMi0yLjEgMS4yLTEuMSAwLTIuMS0uOC0yLjEtMi4xIDAtLjcuMy0xLjMuOS0xLjYuNS0uMiAxLjEtLjIgMS42LjMuNi40IDEuMiAxLjIgMS4yIDIuMXptMy45LTUuM2MtMS4xIDEuOC0yLjkgMi45LTQuOSAyLjktLjggMC0xLjYtLjItMi4zLS42LS43LS40LTEuMi0xLjEtMS4yLTEuOSAwLS40LjItLjguNC0xLjEuMi0uMy42LS40IDEtLjQuNC0uMS44LjEuOS40LjEuMy40LjYuNi40IDEuMS4yIDEuNi4yIDIuMy0uMiAxLjgtMS4xIDIuOS0yLjkuMi0uMi40LS40LjQtLjYuMS0uMi0uMS0uNC0uNC0uNHptLTMuNi0xLjFjLS40LjgtMS4yIDEuMi0yLjEgMS4yLTEuMSAwLTIuMS0uOC0yLjEtMi4xIDAtLjcuMy0xLjMuOS0xLjYuNS0uMiAxLjEtLjIgMS42LjMuNi40IDEuMiAxLjIgMS4yIDIuMXptLTMuNi0xLjFjLS40LjgtMS4yIDEuMi0yLjEgMS4yLTEuMSAwLTIuMS0uOC0yLjEtMi4xIDAtLjcuMy0xLjMuOS0xLjYuNS0uMiAxLjEtLjIgMS42LjMuNi40IDEuMiAxLjIgMS4yIDIuMXoiLz48L3N2Zz4=" alt="WhatsApp">
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('.faq-item h3').forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>
